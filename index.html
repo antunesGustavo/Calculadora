@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt- br">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título do Página (aparece na aba do navegador) -->
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <!-- Classe que contém o fundo da página -->
+    <div class="fundo">
+
+        <!-- Classe que contém a calculadora -->
+        <div class="calculadora">
+            <h1>Calculadora</h1> 
+            
+            <!-- Caixa que recebera os valores e apresenta os resultados -->
+            <p id="resultado"></p> <br>
+            
+            <!-- Tabela que contém os valores e as operações -->
+            <table>
+                <tr>
+                    <!-- Botão de limpar tudo  -->
+                    <td> <button class="botao" onclick="clean()"> C </button> </td>
+
+                    <!-- Botão que apaga o último valor digitado -->
+                    <td> <button class="botao" onclick="back()"> ⌫ </button> </td>
+
+                    <!-- Botão com a operação de dividir -->
+                    <td> <button class="botao" onclick="insert('/')"> ÷ </button> </td>
+
+                    <!-- Botão com a operação de multiplicar -->
+                    <td> <button class="botao" onclick="insert('*')"> x </button> </td>
+                </tr>
+                
+                <tr>
+                    <!-- Botão equivalente ao número 7 -->
+                    <td> <button class="botao" onclick="insert('7')"> 7 </button> </td>
+
+                    <!-- Botão equivalente ao número 8 -->
+                    <td> <button class="botao" onclick="insert('8')"> 8 </button> </td>
+
+                    <!-- Botão equivalente ao número 9 -->
+                    <td> <button class="botao" onclick="insert('9')"> 9 </button> </td>
+
+                    <!-- Botão com a operação de subtrair -->
+                    <td> <button class="botao" onclick="insert('-')"> - </button> </td>
+                </tr>
+
+                <tr>
+                    <!-- Botão equivalente ao número 4 -->
+                    <td> <button class="botao" onclick="insert('4')"> 4 </button> </td>
+
+                    <!-- Botão equivalente ao número 5 -->
+                    <td> <button class="botao" onclick="insert('5')"> 5 </button> </td>
+
+                    <!-- Botão equivalente ao número 6 -->
+                    <td> <button class="botao" onclick="insert('6')"> 6 </button> </td>
+
+                    <!-- Botão com a operação de somar -->
+                    <td> <button class="botao" onclick="insert('+')"> + </button> </td>
+                </tr>
+
+                <tr>
+                    <!-- Botão equivalente ao número 1 -->
+                    <td> <button class="botao" onclick="insert('1')"> 1 </button> </td>
+
+                    <!-- Botão equivalente ao número 2 -->
+                    <td> <button class="botao" onclick="insert('2')"> 2 </button> </td>
+
+                    <!-- Botão equivalente ao número 3 -->
+                    <td> <button class="botao" onclick="insert('3')"> 3 </button> </td>
+
+                    <!-- Estilização para que o botão = complete 2 campos da tabela -->
+                    <td rowspan="2"><button class="botao" style="height: 106px;" 
+                        onclick="calcular()"> = </button> </td>
+                </tr>
+
+                <tr>
+                    <!-- Estilização para que o botão 0 complete 2 campos da tabela -->
+                    <td colspan="2"><button class="botao" style="width: 106px;" 
+                        onclick="insert('0')"> 0 </button> </td>
+                    <td> <button class="botao" onclick="insert('.')"> . </button> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+    <!-- JS -->
+    <script src="script.js"></script>
+</html>

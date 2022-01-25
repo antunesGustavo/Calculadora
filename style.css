@@ -1,0 +1,57 @@
+/* Url do import da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap');
+
+/* Todos os elementos da página */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* Estilização dos elementos da calsse "fundo" */
+.fundo{
+    background-image: linear-gradient(45deg,#97ABFF, #123597);
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilixação dos elementos da calsse "calculadora" */
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* Estilixação dos elementos da calsse "botão" */
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31,31,31);
+    border: none;
+    color: #fff;
+}
+
+/* Efeito para quando passarmos o mouse em cima dos botões, ele mudará sua cor */
+.botao:hover{
+    background-color: black;
+}
+
+/* Estilixação dos elementos da calsse "resultado" */
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
